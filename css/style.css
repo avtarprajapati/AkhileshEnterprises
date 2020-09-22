@@ -282,7 +282,7 @@ img {
   width: 100%;
 }
 
-.projects {
+.showcase {
   -ms-grid-column: 2;
   -ms-grid-column-span: 8;
   grid-column: 2/10;
