@@ -84,6 +84,7 @@ section {
   &__icon {
     position: relative;
     margin-right: 5rem;
+    z-index: 2;
 
     &,
     &::before,
@@ -593,7 +594,7 @@ img {
       margin: 0;
       flex-direction: column;
       position: absolute;
-      top: 4.5rem;
+      top: 10vh;
       right: 1rem;
       background-color: var(--primary);
       width: fit-content;

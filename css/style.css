@@ -102,6 +102,7 @@ section {
 .navigation__icon {
   position: relative;
   margin-right: 5rem;
+  z-index: 2;
 }
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
@@ -747,7 +748,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 4.5rem;
+    top: 10vh;
     right: 1rem;
     background-color: var(--primary);
     width: -webkit-fit-content;
