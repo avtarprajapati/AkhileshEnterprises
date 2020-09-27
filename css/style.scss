@@ -29,6 +29,7 @@ body {
   box-sizing: border-box;
   line-height: 1.5;
   font-family: "Josefin Sans", sans-serif;
+  user-select: none;
 }
 
 .anchor {
@@ -66,10 +67,46 @@ section {
   grid-template-columns: 1fr repeat(8, minmax(5rem, 14rem)) 1fr;
   background: var(--primary);
   color: var(--grey);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   &__logo {
     color: inherit;
   }
+
+  &__checkbox,
+  &__button {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+    margin-right: 5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: var(--grey);
+      display: inline-block;
+      content: "";
+      position: absolute;
+      right: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
   &__nav {
     grid-column: 2/10;
     display: flex;
@@ -83,6 +120,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.2s ease-in-out;
   }
   &__item {
     padding: 0.5rem 1rem;
@@ -485,6 +523,16 @@ img {
     }
   }
 }
+
+@media only screen and (max-width: 850px) {
+  .navigation__list {
+    margin: auto;
+  }
+  .header {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   section {
     margin: 6rem 0;
@@ -535,17 +583,53 @@ img {
     }
   }
 }
+
 // navigation toggle
+@media only screen and (max-width: 690px) {
+  .navigation {
+    &__list {
+      display: none;
+      visibility: hidden;
+      margin: 0;
+      flex-direction: column;
+      position: absolute;
+      top: 4.5rem;
+      right: 1rem;
+      background-color: var(--primary);
+      width: fit-content;
+      border-radius: 0 0 1rem 1rem;
+    }
+    &__item {
+      margin: 1rem;
+    }
+
+    &__button {
+      display: inline-block;
+    }
+    &__checkbox:checked ~ &__list {
+      display: block;
+      visibility: visible;
+    }
+    &__checkbox:checked + &__button &__icon {
+      background-color: transparent;
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}
 @media only screen and (max-width: 570px) {
   section {
     margin: 5rem 0;
   }
   .timeline {
     margin-top: 1rem;
-  }
-  .navigation__list {
-    display: none;
-    visibility: hidden;
   }
 }
 @media only screen and (max-width: 420px) {
