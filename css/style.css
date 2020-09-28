@@ -566,6 +566,7 @@ img {
 }
 
 .contact {
+  padding-bottom: 4rem;
   -ms-grid-column: 2;
   -ms-grid-column-span: 8;
   grid-column: 2/10;
