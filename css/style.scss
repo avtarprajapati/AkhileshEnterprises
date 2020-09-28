@@ -56,7 +56,7 @@ body {
 }
 
 section {
-  padding: 8rem 0;
+  margin: 8rem 0;
 }
 
 .heading {
@@ -80,7 +80,9 @@ section {
   grid-template-columns: 1fr repeat(8, minmax(5rem, 14rem)) 1fr;
   background: var(--primary);
   color: var(--grey);
-  position: fixed;
+  // position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1;
   width: 100%;
 
@@ -545,7 +547,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   section {
-    // margin: 5rem 0;
+    margin: 5rem 0;
     // padding: 6rem 0;
   }
   .about {
