@@ -702,7 +702,8 @@ img {
 
 @media only screen and (max-width: 768px) {
   section {
-    margin: 6rem 0;
+    margin: 0 0;
+    padding: 8rem 0;
   }
   .about {
     padding-bottom: 0;
@@ -796,9 +797,6 @@ img {
 }
 
 @media only screen and (max-width: 570px) {
-  section {
-    margin: 5rem 0;
-  }
   .timeline {
     margin-top: 1rem;
   }
