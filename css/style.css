@@ -701,9 +701,6 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  section {
-    padding: 6rem 0;
-  }
   .about {
     padding-bottom: 0;
   }
