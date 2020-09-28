@@ -1471,11 +1471,22 @@
     <script>
       const loadingDiv = document.querySelector(".loading__container");
       const container = document.querySelector(".container");
+      // const navItems = document.querySelectorAll(".navigation__item");
       window.onload = () => {
-        console.log("load page");
         loadingDiv.classList.add("hidden");
         container.classList.remove("hidden");
       };
+      // navItems.forEach((item) => {
+      //   item.addEventListener("click", function () {
+      //     console.log("click");
+      //     // document.getElementById(`${item}`).scrollTop = 20;
+
+      //     console.log(
+      //       document.querySelector(`.${item.className}>a`).href.split("#")
+      //     );
+      //     // console.log(document.getElementById(`${item}`).offsetTop - 100);
+      //   });
+      // });
     </script>
   </body>
 </html>
