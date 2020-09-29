@@ -42,7 +42,8 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+  backface-visibility: hidden !important;
 }
 
 .anchor {
