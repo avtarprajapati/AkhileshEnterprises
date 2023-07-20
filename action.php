@@ -97,7 +97,7 @@ $headers.="Bcc:".$bcc."\r\n";
                 # Set a 200 (okay) response code.
                 http_response_code(200);
                 //echo '<p class="alert alert-success">Thank You! Your message has been sent.</p>';
-                 header("Location:https://www.akhileshenterprises.com/thank-you.php");
+                 header("Location:https://www.akhileshenterprises.com/thanks.php");
 	    exit();
             } else {
                 # Set a 500 (internal server error) response code.
