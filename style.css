@@ -120,7 +120,7 @@ input[type="checkbox"]{
 }
 
 .service-offer{
-  height: 70vh;
+  height: inherit;
   padding: 50px;
 }
 
