@@ -338,7 +338,7 @@ button:hover{
   }
   .process{
     padding: 5px;
-    margin-top: 430px;
+    height: inherit;
   }
   .row-process{
     display: flex;
@@ -349,7 +349,7 @@ button:hover{
   }
   .about-us{
     padding: 5px;
-    margin-top: 430px;
+    height: inherit;
   }
   .row-about{
     display: flex;
@@ -358,7 +358,7 @@ button:hover{
   }
   .gallery-section{
     padding: 5px;
-    margin-top: 150px;
+    height: inherit;
   }
   .get-in-touch{
     padding: 5px;
