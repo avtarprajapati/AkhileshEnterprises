@@ -278,7 +278,7 @@ button:hover{
 }
 
 .footer{
-  height: 50vh;
+  height: 40vh;
   background-color: #000000;
   padding: 50px;
   color: white;
@@ -387,4 +387,12 @@ button:hover{
     row-gap: 20px;
   }
 
+}
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: inherit;
+  align-items: center;
 }
