@@ -304,3 +304,81 @@ button:hover{
   background-color: white;
   color: black;
 }
+
+.get-in-touch{
+  height: 70vh; 
+  padding: 50px; 
+  background-color: lightyellow;
+}
+
+.content-wall{
+  position: absolute; top:300px; background-color: black; 
+  opacity: 0.8; 
+  height: 30vh; left: 50px; 
+  color: white; padding: 10px; font-size: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  nav .logo {
+    font-size: 26px;
+  }
+  nav .menu-btn i {
+    color: black;
+  }
+  .content-wall{
+    top: 270px;
+    left: 6px;
+    font-size: 26px;
+  }
+  .enq-call{
+    padding-top: 8px;
+  }
+  .service-offer{
+    padding: 5px;
+  }
+  .process{
+    padding: 5px;
+    margin-top: 430px;
+  }
+  .row-process{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: unset;
+    width: 100%;
+    column-gap: 20px;
+  }
+  .about-us{
+    padding: 5px;
+    margin-top: 430px;
+  }
+  .row-about{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+  .gallery-section{
+    padding: 5px;
+    margin-top: 150px;
+  }
+  .get-in-touch{
+    padding: 5px;
+    height: inherit;
+  }
+  .row-get{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 5px;
+  }
+  .map{
+    margin-top: 20px;
+  }
+  .footer{
+    height: inherit;
+    padding: 10px;
+  }
+  .col-footer{
+    margin-bottom: 20px;
+  }
+
+}
