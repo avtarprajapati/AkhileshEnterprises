@@ -381,5 +381,10 @@ button:hover{
   .col-footer{
     margin-bottom: 20px;
   }
+  .row-procee{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 
 }
