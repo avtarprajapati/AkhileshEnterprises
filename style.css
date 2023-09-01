@@ -303,4 +303,6 @@ button:hover{
   align-items: center;
 }
 
-
+.nav-link{
+  color: white;
+}
