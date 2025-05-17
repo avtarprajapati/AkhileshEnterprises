@@ -38,6 +38,20 @@
 
     <!-- Load Google reCAPTCHA v3 -->
     <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+    <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-93G3EDLZ3S"
+  ></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-93G3EDLZ3S");
+  </script>
 
 </head>
 
@@ -121,7 +135,7 @@
                                 <div class="menu_side_area">
                                     <div class="h-phone color-2 xs-hide">
                                         <span>Need Help?</span>
-                                        <h5 class="text-white"><a href="tel:(+91)9819656066">(+91)9819656066</a></h5>
+                                        <h5 class="text-white"><a href="tel:(+91)9819656066" style="color: white;">(+91)9819656066</a></h5>
                                     </div>
                                     <a href="https://wa.me/919819656066?text=Hi%20."
                                         class="btn-main bg-color-2 text-dark">Book Service
@@ -189,7 +203,7 @@
                                 </div>
 
                                 <form class="position-relative z1000" method="post"
-                                    action="appointment-submit.php">
+                                    action="appointment-submit.php" netlify>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h5>Select Service</h5>
